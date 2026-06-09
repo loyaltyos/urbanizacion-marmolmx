@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <rect width="180" height="180" rx="24" fill="#101112"/>
+  <rect x="28" y="28" width="124" height="124" rx="16" fill="#f4b400"/>
+  <text x="90" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="900" fill="#101112">UM</text>
+</svg>

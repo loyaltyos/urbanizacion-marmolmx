@@ -1,0 +1,22 @@
+{
+  "name": "Urbanizadora Marmol MX",
+  "short_name": "Urbanizadora MX",
+  "description": "Infraestructura, urbanizacion y maquinaria pesada en Mexico.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101112",
+  "theme_color": "#f4b400",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
