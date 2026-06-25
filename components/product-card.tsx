@@ -36,6 +36,9 @@ export function ProductCard({ product }: { product: Product }) {
             <p className="text-lg font-black text-carbon">{formatProductPrice(product)}</p>
           </div>
         </div>
+        <p className="mt-3 rounded-md border border-construction/30 bg-construction/10 p-3 text-xs font-semibold leading-5 text-carbon">
+          Despues del pago, un asesor confirmara disponibilidad, logistica, alcance y detalles finales.
+        </p>
         <div className="mt-5 grid gap-2 sm:grid-cols-2">
           <button
             className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-carbon px-4 text-xs font-black uppercase tracking-wide text-white transition hover:bg-construction hover:text-carbon"

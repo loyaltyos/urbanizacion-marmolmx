@@ -79,6 +79,30 @@ export const products: Product[] = [
     condition: "servicio"
   },
   {
+    id: "anticipo-servicio-nivelacion",
+    name: "Anticipo de servicio de nivelacion",
+    slug: "anticipo-servicio-nivelacion",
+    category: "Servicios de urbanizacion",
+    shortDescription: "Anticipo para coordinacion inicial, revision tecnica y programacion de obra.",
+    longDescription:
+      "Anticipo para coordinacion inicial de servicio de nivelacion, revision tecnica y programacion de obra.",
+    price: 12000,
+    showPrice: true,
+    image: "https://images.unsplash.com/photo-1597974385058-66a931a50a7a?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200",
+    stock: 99,
+    active: true,
+    purchaseType: "anticipo",
+    technicalSheet: ["Coordinacion inicial", "Revision tecnica", "Programacion de obra", "Validacion posterior al pago"],
+    specifications: {
+      Categoria: "Servicios de urbanizacion",
+      Tipo: "Compra directa / anticipo",
+      Confirmacion: "Disponibilidad, logistica, alcance y detalles finales"
+    },
+    brand: "Urbanizadora Marmol MX",
+    model: "Anticipo de servicio",
+    condition: "servicio"
+  },
+  {
     id: "compactacion",
     name: "Servicio de compactacion",
     slug: "servicio-compactacion",
@@ -97,6 +121,30 @@ export const products: Product[] = [
     specifications: { Metodo: "Segun material", Uso: "Terracerias", Modalidad: "Apartado / validacion tecnica" },
     brand: "Urbanizadora Marmol MX",
     model: "Servicio especializado",
+    condition: "servicio"
+  },
+  {
+    id: "anticipo-compactacion-terreno",
+    name: "Anticipo de compactacion de terreno",
+    slug: "anticipo-compactacion-terreno",
+    category: "Compactacion y nivelacion",
+    shortDescription: "Anticipo sujeto a validacion de ubicacion, accesos y alcance operativo.",
+    longDescription:
+      "Anticipo para servicio de compactacion de terreno, sujeto a validacion de ubicacion, condiciones de acceso y alcance operativo.",
+    price: 15000,
+    showPrice: true,
+    image: "https://images.unsplash.com/photo-1776381733574-372689e246b4?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200",
+    stock: 99,
+    active: true,
+    purchaseType: "anticipo",
+    technicalSheet: ["Compactacion de terreno", "Revision de accesos", "Validacion de ubicacion", "Alcance operativo por confirmar"],
+    specifications: {
+      Categoria: "Compactacion y nivelacion",
+      Tipo: "Compra directa / anticipo",
+      Confirmacion: "Disponibilidad, logistica, alcance y detalles finales"
+    },
+    brand: "Urbanizadora Marmol MX",
+    model: "Anticipo de servicio",
     condition: "servicio"
   },
   {
@@ -223,6 +271,30 @@ export const products: Product[] = [
     specifications: { Alcance: "Por proyecto", Uso: "Urbanizacion", Pago: "Apartado / anticipo" },
     brand: "Urbanizadora Marmol MX",
     model: "Servicio especializado",
+    condition: "servicio"
+  },
+  {
+    id: "anticipo-movimiento-tierra",
+    name: "Anticipo para movimiento de tierra",
+    slug: "anticipo-movimiento-tierra",
+    category: "Movimiento de tierra",
+    shortDescription: "Anticipo para movimiento de tierra, terracerias o preparacion de plataforma.",
+    longDescription:
+      "Anticipo para proyecto de movimiento de tierra, terracerias o preparacion de plataforma.",
+    price: 20000,
+    showPrice: true,
+    image: "https://images.unsplash.com/photo-1652303713917-2666b8bee507?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200",
+    stock: 99,
+    active: true,
+    purchaseType: "anticipo",
+    technicalSheet: ["Movimiento de tierra", "Terracerias", "Preparacion de plataforma", "Alcance por validar"],
+    specifications: {
+      Categoria: "Movimiento de tierra",
+      Tipo: "Compra directa / anticipo",
+      Confirmacion: "Disponibilidad, logistica, alcance y detalles finales"
+    },
+    brand: "Urbanizadora Marmol MX",
+    model: "Anticipo de servicio",
     condition: "servicio"
   },
   {

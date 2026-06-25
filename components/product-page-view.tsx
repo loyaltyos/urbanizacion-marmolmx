@@ -31,6 +31,9 @@ export function ProductPageView({ product }: { product: Product }) {
             <p className="mt-2 text-sm uppercase tracking-wide text-white/55">
               {product.purchaseType.replace("-", " ")} / Stock {product.stock} / {product.condition}
             </p>
+            <p className="mt-4 rounded-md border border-white/10 bg-white/5 p-4 text-sm font-semibold leading-6 text-white/75">
+              Despues del pago, un asesor confirmara disponibilidad, logistica, alcance y detalles finales.
+            </p>
             <ProductDetailActions product={product} />
           </div>
           <div className="mt-6 rounded-lg border border-black/10 bg-white p-6">

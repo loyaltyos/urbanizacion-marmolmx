@@ -73,7 +73,7 @@ export function CheckoutClient() {
           Flujo preparado para compra directa, anticipo y pago de cotizacion autorizada mediante Stripe Checkout en modo prueba.
         </p>
         <div className="mt-5 rounded-md border border-construction/40 bg-construction/10 p-4 text-sm font-semibold leading-6 text-carbon">
-          Los precios pueden estar sujetos a disponibilidad, ubicacion de obra, flete, maniobras y validacion tecnica. Despues del pago, un asesor confirmara los detalles finales.
+          Los precios pueden estar sujetos a disponibilidad, ubicacion de obra, flete, maniobras y validacion tecnica. Despues del pago, un asesor confirmara disponibilidad, logistica, alcance y detalles finales.
         </div>
         <p className="mt-3 text-xs font-bold uppercase tracking-wide text-steel">
           Pago procesado para Urbanizadora Marmol MX, division de Marmol MX.
@@ -186,7 +186,7 @@ export function CheckoutClient() {
         </div>
         <div className="mt-5 rounded-md border border-white/10 bg-white/5 p-4 text-xs leading-5 text-white/70">
           <p className="font-semibold">
-            Los precios pueden estar sujetos a disponibilidad, ubicacion de obra, flete, maniobras y validacion tecnica. Despues del pago, un asesor confirmara los detalles finales.
+            Los precios pueden estar sujetos a disponibilidad, ubicacion de obra, flete, maniobras y validacion tecnica. Despues del pago, un asesor confirmara disponibilidad, logistica, alcance y detalles finales.
           </p>
           <div className="mt-3 flex flex-wrap gap-x-3 gap-y-2 text-construction">
             <Link className="hover:text-signal" href="/terminos-y-condiciones">Terminos y condiciones</Link>
@@ -220,7 +220,7 @@ export function CheckoutClient() {
           {loading ? "Creando sesion..." : "Pagar con Stripe"}
         </button>
         <p className="mt-4 text-xs leading-5 text-white/55">
-          Los precios iniciales permiten compra, apartado o anticipo en linea. Un asesor confirmara disponibilidad, logistica, entrega y condiciones tecnicas antes del cierre operativo.
+          Los precios iniciales permiten compra, apartado o anticipo en linea. Un asesor confirmara disponibilidad, logistica, alcance y detalles finales antes del cierre operativo.
         </p>
         <p className="mt-3 text-xs font-semibold leading-5 text-white/55">
           Pago procesado para Urbanizadora Marmol MX, division de Marmol MX.
