@@ -47,7 +47,7 @@ export default async function CheckoutSuccessPage({ searchParams }: CheckoutSucc
           </p>
           <h1 className="mt-3 text-4xl font-black">Solicitud recibida</h1>
           <p className="mx-auto mt-4 max-w-2xl text-white/70">
-            Tu compra o solicitud fue recibida correctamente. Un asesor de Urbanizadora Marmol MX se comunicara contigo para confirmar disponibilidad, logistica, entrega, condiciones tecnicas y detalles finales.
+            Después del pago, un asesor de Urbanizadora Marmol MX se comunicará contigo para confirmar disponibilidad, logística, entrega, condiciones técnicas y detalles finales.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-xs font-bold uppercase tracking-wide text-construction">
             Pago procesado para Urbanizadora Marmol MX, division de Marmol MX.

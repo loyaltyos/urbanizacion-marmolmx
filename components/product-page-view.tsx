@@ -32,7 +32,7 @@ export function ProductPageView({ product }: { product: Product }) {
               {product.purchaseType.replace("-", " ")} / Stock {product.stock} / {product.condition}
             </p>
             <p className="mt-4 rounded-md border border-white/10 bg-white/5 p-4 text-sm font-semibold leading-6 text-white/75">
-              Despues del pago, un asesor confirmara disponibilidad, logistica, alcance y detalles finales.
+              Después del pago, un asesor de Urbanizadora Marmol MX se comunicará contigo para confirmar disponibilidad, logística, entrega, condiciones técnicas y detalles finales.
             </p>
             <ProductDetailActions product={product} />
           </div>

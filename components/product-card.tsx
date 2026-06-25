@@ -37,7 +37,7 @@ export function ProductCard({ product }: { product: Product }) {
           </div>
         </div>
         <p className="mt-3 rounded-md border border-construction/30 bg-construction/10 p-3 text-xs font-semibold leading-5 text-carbon">
-          Despues del pago, un asesor confirmara disponibilidad, logistica, alcance y detalles finales.
+          Después del pago, un asesor de Urbanizadora Marmol MX se comunicará contigo para confirmar disponibilidad, logística, entrega, condiciones técnicas y detalles finales.
         </p>
         <div className="mt-5 grid gap-2 sm:grid-cols-2">
           <button

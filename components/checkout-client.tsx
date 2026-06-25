@@ -14,6 +14,9 @@ type CheckoutForm = {
   project_location: string;
 };
 
+const stripePaymentErrorMessage =
+  "No pudimos procesar el pago. Intenta nuevamente o comunícate con un asesor.";
+
 export function CheckoutClient() {
   const { items, subtotal, updateQuantity, removeItem } = useCart();
   const [loading, setLoading] = useState(false);
@@ -53,13 +56,13 @@ export function CheckoutClient() {
       const payload = await response.json();
 
       if (!response.ok || !payload.url) {
-        setError(payload.message || "No pudimos iniciar el pago con Stripe.");
+        setError(payload.message || stripePaymentErrorMessage);
         return;
       }
 
       window.location.assign(payload.url);
     } catch {
-      setError("No pudimos conectar con Stripe. Intenta de nuevo o contacta a un asesor.");
+      setError(stripePaymentErrorMessage);
     } finally {
       setLoading(false);
     }
@@ -70,10 +73,10 @@ export function CheckoutClient() {
       <div className="rounded-lg border border-black/10 bg-white p-5 shadow-sm">
         <h1 className="text-3xl font-black text-carbon">Checkout industrial</h1>
         <p className="mt-3 text-sm leading-6 text-steel">
-          Flujo preparado para compra directa, anticipo y pago de cotizacion autorizada mediante Stripe Checkout en modo prueba.
+          Flujo preparado para compra directa, anticipo y pago de cotizacion autorizada mediante Stripe Checkout.
         </p>
         <div className="mt-5 rounded-md border border-construction/40 bg-construction/10 p-4 text-sm font-semibold leading-6 text-carbon">
-          Los precios pueden estar sujetos a disponibilidad, ubicacion de obra, flete, maniobras y validacion tecnica. Despues del pago, un asesor confirmara disponibilidad, logistica, alcance y detalles finales.
+          Después del pago, un asesor de Urbanizadora Marmol MX se comunicará contigo para confirmar disponibilidad, logística, entrega, condiciones técnicas y detalles finales.
         </div>
         <p className="mt-3 text-xs font-bold uppercase tracking-wide text-steel">
           Pago procesado para Urbanizadora Marmol MX, division de Marmol MX.
@@ -186,7 +189,7 @@ export function CheckoutClient() {
         </div>
         <div className="mt-5 rounded-md border border-white/10 bg-white/5 p-4 text-xs leading-5 text-white/70">
           <p className="font-semibold">
-            Los precios pueden estar sujetos a disponibilidad, ubicacion de obra, flete, maniobras y validacion tecnica. Despues del pago, un asesor confirmara disponibilidad, logistica, alcance y detalles finales.
+            Después del pago, un asesor de Urbanizadora Marmol MX se comunicará contigo para confirmar disponibilidad, logística, entrega, condiciones técnicas y detalles finales.
           </p>
           <div className="mt-3 flex flex-wrap gap-x-3 gap-y-2 text-construction">
             <Link className="hover:text-signal" href="/terminos-y-condiciones">Terminos y condiciones</Link>

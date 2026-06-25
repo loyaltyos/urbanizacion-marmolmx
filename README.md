@@ -1,17 +1,17 @@
 # Urbanizadora Marmol MX
 
-## Stripe Checkout en modo prueba
+## Stripe Checkout
 
 El checkout usa Stripe Hosted Checkout. No se deben hardcodear credenciales en el codigo ni exponer `STRIPE_SECRET_KEY` al frontend.
 
 1. Copia `.env.example` a `.env.local`.
-2. En el dashboard de Stripe, activa modo prueba y copia tus llaves:
+2. En el dashboard de Stripe, copia las llaves del entorno que corresponda:
 
 ```bash
-STRIPE_SECRET_KEY=sk_test_...
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
+STRIPE_SECRET_KEY=sk_...
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_...
 STRIPE_WEBHOOK_SECRET=whsec_...
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_SITE_URL=https://www.urbanizacionmarmol.com
 ```
 
 3. Instala dependencias si hace falta:

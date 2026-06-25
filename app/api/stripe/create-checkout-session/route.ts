@@ -29,6 +29,9 @@ function getSiteUrl() {
   return process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "http://localhost:3000";
 }
 
+const stripePaymentErrorMessage =
+  "No pudimos procesar el pago. Intenta nuevamente o comunícate con un asesor.";
+
 export async function POST(request: Request) {
   let payload: CheckoutRequest;
 
@@ -128,7 +131,15 @@ export async function POST(request: Request) {
         company,
         project_location: projectLocation,
         order_type: "urbanizadora_marmol_mx",
+        environment: "production_ready",
         items: metadataItems.join("|").slice(0, 500)
+      },
+      payment_intent_data: {
+        metadata: {
+          order_type: "urbanizadora_marmol_mx",
+          environment: "production_ready",
+          items: metadataItems.join("|").slice(0, 500)
+        }
       }
     });
 
@@ -136,7 +147,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error("Stripe checkout session error", error);
     return NextResponse.json(
-      { message: "No pudimos iniciar Stripe Checkout. Intenta de nuevo o contacta a un asesor." },
+      { message: stripePaymentErrorMessage },
       { status: 500 }
     );
   }

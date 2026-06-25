@@ -9,10 +9,35 @@ export const categories: ProductCategory[] = [
   "Refacciones",
   "Accesorios industriales",
   "Servicios de urbanizacion",
+  "Pagos y anticipos",
   "Anticipos y cotizaciones"
 ];
 
 export const products: Product[] = [
+  {
+    id: "compra-minima-prueba",
+    name: "Compra minima de prueba",
+    slug: "compra-minima-prueba",
+    category: "Pagos y anticipos",
+    shortDescription: "Producto de bajo importe para validar Stripe en produccion.",
+    longDescription:
+      "Producto de bajo importe para validar el funcionamiento de Stripe en produccion.",
+    price: 100,
+    showPrice: true,
+    image: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200",
+    stock: 99,
+    active: true,
+    purchaseType: "compra-directa",
+    technicalSheet: ["Compra directa", "Validacion de pago", "Importe bajo", "Operacion en MXN"],
+    specifications: {
+      Categoria: "Pagos y anticipos",
+      Tipo: "Compra directa / prueba",
+      Confirmacion: "Disponibilidad, logistica, entrega, condiciones tecnicas y detalles finales"
+    },
+    brand: "Urbanizadora Marmol MX",
+    model: "Producto de prueba operativa",
+    condition: "servicio"
+  },
   {
     id: "excavadora-renta",
     name: "Renta de excavadora hidraulica",
@@ -95,7 +120,7 @@ export const products: Product[] = [
     technicalSheet: ["Coordinacion inicial", "Revision tecnica", "Programacion de obra", "Validacion posterior al pago"],
     specifications: {
       Categoria: "Servicios de urbanizacion",
-      Tipo: "Compra directa / anticipo",
+      Tipo: "Anticipo",
       Confirmacion: "Disponibilidad, logistica, alcance y detalles finales"
     },
     brand: "Urbanizadora Marmol MX",
@@ -140,7 +165,7 @@ export const products: Product[] = [
     technicalSheet: ["Compactacion de terreno", "Revision de accesos", "Validacion de ubicacion", "Alcance operativo por confirmar"],
     specifications: {
       Categoria: "Compactacion y nivelacion",
-      Tipo: "Compra directa / anticipo",
+      Tipo: "Anticipo",
       Confirmacion: "Disponibilidad, logistica, alcance y detalles finales"
     },
     brand: "Urbanizadora Marmol MX",
@@ -290,7 +315,7 @@ export const products: Product[] = [
     technicalSheet: ["Movimiento de tierra", "Terracerias", "Preparacion de plataforma", "Alcance por validar"],
     specifications: {
       Categoria: "Movimiento de tierra",
-      Tipo: "Compra directa / anticipo",
+      Tipo: "Anticipo",
       Confirmacion: "Disponibilidad, logistica, alcance y detalles finales"
     },
     brand: "Urbanizadora Marmol MX",

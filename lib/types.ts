@@ -7,6 +7,7 @@ export type ProductCategory =
   | "Refacciones"
   | "Accesorios industriales"
   | "Servicios de urbanizacion"
+  | "Pagos y anticipos"
   | "Anticipos y cotizaciones";
 
 export type PurchaseType = "compra-directa" | "anticipo" | "cotizacion";

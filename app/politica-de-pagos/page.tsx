@@ -23,7 +23,7 @@ export default function PaymentsPolicyPage() {
         },
         {
           title: "Pagos en linea",
-          body: "El sitio esta preparado para pagos en linea mediante Stripe Checkout en modo prueba. No deben ingresarse credenciales reales fuera de una integracion autorizada y validada."
+          body: "El sitio esta preparado para pagos en linea mediante Stripe Checkout. Las credenciales deben configurarse exclusivamente mediante variables de entorno autorizadas."
         },
         {
           title: "Compras, anticipos y cotizaciones",
@@ -35,11 +35,11 @@ export default function PaymentsPolicyPage() {
         },
         {
           title: "Confirmacion operativa",
-          body: "Despues del pago, un asesor confirmara los detalles finales de disponibilidad, logistica, entrega, condiciones tecnicas, facturacion, programacion y alcance operativo."
+          body: "Después del pago, un asesor de Urbanizadora Marmol MX se comunicará contigo para confirmar disponibilidad, logística, entrega, condiciones técnicas y detalles finales."
         },
         {
           title: "Pasarela de pago",
-          body: "Stripe Checkout se mantiene en modo prueba hasta completar la validacion de Vercel, dominio, webhooks y configuracion operativa de produccion."
+          body: "Stripe Checkout procesa los pagos en linea usando la configuracion activa del entorno de despliegue, el dominio autorizado y el webhook de la integracion."
         }
       ]}
     />
